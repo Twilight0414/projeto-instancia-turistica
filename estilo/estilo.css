@@ -1,0 +1,80 @@
+/* Estilos personalizados */
+
+#banner {
+    background-size: cover;
+    background-position: center;
+}
+
+/* Garantir que todos os cards tenham a mesma altura */
+#imoveis .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#imoveis .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#imoveis .card-img-top {
+    object-fit: cover;
+    height: 200px; /* Controla a altura da imagem */
+}
+
+#imoveis .card-body {
+    flex-grow: 1; /* Faz o corpo do card crescer para ocupar o espaço disponível */
+}
+footer {
+    margin-top: 50px;
+}
+
+h1{
+    color: #333;
+}
+
+
+/* Efeito hover nos cards */
+#imoveis .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Ajustes no banner */
+#banner {
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+/* Estilo customizado para navbar branca */
+.navbar {
+    padding: 1rem;
+    border-bottom: 1px solid #e5e5e5; /* Linha suave no final para destacar */
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    color: #333 !important; /* Cor escura para o texto */
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #00cc66 !important; /* Efeito de hover em verde */
+  }
+  
+  .dropdown-menu {
+    background-color: #f8f9fa; /* Cor clara para o menu suspenso */
+  }
+  
+  .dropdown-item {
+    color: #333 !important;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #e9ecef; /* Efeito de hover no dropdown */
+  }
+  

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locação de Imóveis</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <!-- Navbar branca aprimorada -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Locação de Imóveis</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#imoveis">Imóveis</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Serviços
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#sobre">Sobre Nós</a></li>
+              <li><a class="dropdown-item" href="#contato">Contato</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Ajuda</a></li>
+            </ul>
+          </li>
+        </ul>
+  
+        <!-- Barra de Busca -->
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Buscar Imóveis" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+    <!-- Banner -->
+    <section id="banner" class="text-center text-light d-flex justify-content-center align-items-center" style="background-image: url('https://ppbxdsyojwqujdrmnxdv.storage.sa-east-1.nhost.run/v1/files/6f1f4848-143f-42b4-9bef-45718473e6a6'); height: 700px;">
+        <h1>Encontre o imóvel dos seus sonhos!</h1>
+    </section>
+
+    <!-- Listagem de Imóveis -->
+    <section id="imoveis" class="container mt-5">
+        <h2 class="text-center mb-4">Imóveis Disponíveis</h2>
+        <div class="row">
+            <!-- Card de Imóvel -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://www.eztec.com.br/wp-content/uploads/blog/2023/09/post_blog_marco_varanda.jpg" class="card-img-top" alt="Imóvel 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Apartamento no Centro</h5>
+                        <p class="card-text">2 quartos, 1 banheiro, 1 vaga na garagem. Próximo ao metrô.</p>
+                        <button class="btn btn-primary">Mais Detalhes</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2020/03/31/01/39/house-4985938_1280.jpg" class="card-img-top" alt="Casa Suburbana">
+                    <div class="card-body">
+                        <h5 class="card-title">Casa Suburbana</h5>
+                        <p class="card-text">3 quartos, 2 banheiros, quintal grande, garagem para 2 carros. Bairro tranquilo e arborizado.</p>
+                        <button class="btn btn-primary">Mais Detalhes</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/36/d4/df/36d4df69e74ed181e1bfbc5bd6a8d5d4.jpg" class="card-img-top" alt="Cobertura de Luxo">
+                    <div class="card-body">
+                        <h5 class="card-title">Cobertura de Luxo</h5>
+                        <p class="card-text">4 quartos, 3 banheiros, piscina privativa, vista panorâmica. Localização privilegiada.</p>
+                        <button class="btn btn-primary">Mais Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mais Cards de imóveis -->
+            <!-- Duplicar o modelo acima para mais imóveis -->
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section id="sobre" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Sobre Nós</h2>
+            <p class="text-center">Somos uma empresa de locação de imóveis, ajudando nossos clientes a encontrar o imóvel ideal.</p>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="container py-5">
+        <form id="formContato">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <input type="text" class="form-control" id="nome" placeholder="Seu Nome" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="Seu Email" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" id="mensagem" rows="5" placeholder="Sua Mensagem" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2024 Imóveis Locação. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('formContato').addEventListener('submit', function(event) {
+            let nome = document.getElementById('nome').value;
+            let email = document.getElementById('email').value;
+            let mensagem = document.getElementById('mensagem').value;
+        
+            if (nome === '' || email === '' || mensagem === '') {
+                event.preventDefault();
+                alert('Por favor, preencha todos os campos.');
+            } else {
+                alert('Mensagem enviada com sucesso!');
+            }
+        });
+        </script>
+ 
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Personalizado -->
+    <script src="script.js"></script>
+    <!-- Bootstrap JS (deve estar no final do body) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
